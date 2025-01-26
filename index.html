@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Link in Bio</title>
     <style>
-    *  {
+    /*  {
         border:thin red solid
-      }
+      }*/
       html {
         min-height: 100%;
       }
@@ -32,9 +33,15 @@
       }
       a {
         color: rgba(255, 255, 255, 1.0);
+        text-decoration: none;
       }
       .link {
         background-color: rgba(149, 123, 173, 0.5);
+        background-color: rgba(149, 123, 173, 0.5);
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
       }
       .main-container { 
         max-width: 640px;
@@ -47,6 +54,9 @@
       .name-row {
         margin-bottom: 20px;
         text-align: center;
+        font-family: Georgia;
+        font-size: 24px;
+        font-weight: 900;
       }
       .social-icons-row {
         margin-bottom: 30px;
@@ -57,6 +67,10 @@
         margin-bottom: 20px;
         display: flex;
         align-items: center;
+      }
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
       }
 
         
@@ -72,27 +86,27 @@
       </div>
       <div class="social-icons-row">
         <a href="https://www.linkedin.com/in/smhammadzaidi/" target="_blank">
-          LinkedIn
+          <i class="fa-brands fa-linkedin"></i>
           </a>
         <a href="https://github.com/smhammadzaidi" target="_blank">
-          Github
+          <i class="fa-brands fa-github"></i>
         </a>
         <a href="https://www.instagram.com/smhammadzaidi" target="_blank">
-          Instagram
+          <i class="fa-brands fa-instagram"></i>
         </a>
       </div>
       <div class="links-row">
         <div class="link">
           <img class="thumbnail" src="/thumbnails/bughatti.jpg" alt="bughatti image">
-          <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" target="_blank">Bughatti World Record Video</a>
+          <a class="link-text" href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" target="_blank">Bughatti World Record Video</a>
         </div>
         <div class="link">
           <img class="thumbnail" src="/thumbnails/lambo.jpg" alt="lamb image">
-          <a href="https://www.youtube.com/watch?v=zRT1hw_-0a8" target="_blank">Craziest Lambo Ever Built!></a>
+          <a class="link-text" href="https://www.youtube.com/watch?v=zRT1hw_-0a8" target="_blank">Craziest Lambo Ever Built!</a>
         </div>
         <div class="link">
           <img class="thumbnail" src="/thumbnails/mclaren.jpg" alt="mclaren image">
-          <a href="https://www.youtube.com/watch?v=OL_eIZjiLUk" targer="_blank">The Widowmaker</a>
+          <a class="link-text" href="https://www.youtube.com/watch?v=OL_eIZjiLUk" targer="_blank">The Widowmaker</a>
         </div>
       </div>
     </div>
