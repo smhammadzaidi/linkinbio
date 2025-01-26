@@ -2,17 +2,70 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Link in Bio</title>
     <style>
     *  {
         border:thin red solid
       }
+      html {
+        min-height: 100%;
+      }
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: linear-gradient(180deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+        color: rgba(255, 255, 255, 1.0);
+      }
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 48px;
+      }
+      a {
+        color: rgba(255, 255, 255, 1.0);
+      }
+      .link {
+        background-color: rgba(149, 123, 173, 0.5);
+      }
+      .main-container { 
+        max-width: 640px;
+        margin: auto;
+      }
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .name-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .link {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+        
     </style>
   </head>
   <body>
     <div class="main-container">
       <div class="image-row">
-        <img src="/thumbnails/download-2.jpg" alt="Hammad Zaidi Profile Picture">
+        <img class="avatar-image" src="/thumbnails/Download-2.jpg" alt="Hammad Zaidi Profile Picture">
       </div>
       <div class="name-row">
         Syed Mohammad Hammad Zaidi
@@ -24,29 +77,24 @@
         <a href="https://github.com/smhammadzaidi" target="_blank">
           Github
         </a>
-        <a href="https://www.instagram.com/smhammadzaidi" target="blank">
+        <a href="https://www.instagram.com/smhammadzaidi" target="_blank">
           Instagram
         </a>
       </div>
       <div class="links-row">
         <div class="link">
-          Link 1
+          <img class="thumbnail" src="/thumbnails/bughatti.jpg" alt="bughatti image">
+          <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" target="_blank">Bughatti World Record Video</a>
         </div>
         <div class="link">
-          Link 2
+          <img class="thumbnail" src="/thumbnails/lambo.jpg" alt="lamb image">
+          <a href="https://www.youtube.com/watch?v=zRT1hw_-0a8" target="_blank">Craziest Lambo Ever Built!></a>
         </div>
         <div class="link">
-          Link 3
+          <img class="thumbnail" src="/thumbnails/mclaren.jpg" alt="mclaren image">
+          <a href="https://www.youtube.com/watch?v=OL_eIZjiLUk" targer="_blank">The Widowmaker</a>
         </div>
-      <div class="etc">
-        etc
       </div>
-      </div>
-      
-  
-
     </div>
-    
-
   </body>
 </html>
